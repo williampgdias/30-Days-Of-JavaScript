@@ -145,3 +145,5 @@ console.log(seconds.getSeconds());
 // 1. Using getTime()
 const time = new Date();
 console.log(time.getTime());
+
+const teste = new getDate();
