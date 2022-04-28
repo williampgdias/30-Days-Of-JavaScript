@@ -77,3 +77,71 @@ console.log(count);
 let count2 = 0;
 console.log(count2++);
 console.log(count2);
+
+// 3. Ternary Operators
+let isRaining2 = true;
+isRaining2
+    ? console.log('You need a rain coat')
+    : console.log('No need for a rain coat');
+
+isRaining2 = false;
+isRaining2
+    ? console.log('You need a rain coat')
+    : console.log('No need for a rain coat');
+
+let number = 5;
+number > 0
+    ? console.log(`${number} is a positive number`)
+    : console.log(`${number} is a negative number`);
+
+number = -5;
+number > 0
+    ? console.log(`${number} is a positive number`)
+    : console.log(`${number} is a negative number`);
+
+// 4. Window prompt()
+// let number2 = prompt('Enter a number', 'number goes here');
+// console.log(number2);
+
+// const agree = confirm('Are you sure you like to delete?');
+// console.log(agree); // result will be true or false based on what you click on the dialog box
+
+// Date Object
+
+// Creating a time object
+const now = new Date();
+console.log(now);
+
+// Getting full year
+const fullYear = new Date();
+console.log(fullYear.getFullYear());
+
+// Getting month
+const month = new Date();
+console.log(month.getMonth()); // starts with 0 (0-11)
+
+// Getting day of the month
+const dayOfTheMonth = new Date();
+console.log(dayOfTheMonth.getDate()); // day(1-31)
+
+// Getting day of the week
+const dayOfTheWeek = new Date();
+console.log(dayOfTheWeek.getDay()); // Sunday is 0, Monday is 1 and Saturday is 6
+
+// Getting hours
+const hours = new Date();
+console.log(hours.getHours());
+
+// Getting minutes
+const minutes = new Date();
+console.log(minutes.getMinutes());
+
+// Getting seconds
+const seconds = new Date();
+console.log(seconds.getSeconds());
+
+// Getting time - This method give time in milliseconds starting from January 1, 1970. It is also know as Unix time. We can get the unix time in to ways.
+
+// 1. Using getTime()
+const time = new Date();
+console.log(time.getTime());
